@@ -3,8 +3,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=mhd12e&label=Profile%20views&color=ff7800&style=flat-square" alt="mhd12e" /> </p>
 
-<p align="left"> <a href="https://twitter.com/mhd12e" target="blank"><img src="https://img.shields.io/twitter/follow/mhd12e?logo=twitter&style=for-the-badge" alt="mhd12e" /></a> </p>
-
 - 🔭 I’m currently working on [My Home Server](https://devlix.org/blog/id/)
 
 - 👨‍💻 All of my projects are available at [https://devlix.org](https://devlix.org)
