@@ -17,6 +17,10 @@
 
 ### Blogs posts
 <!-- BLOG-POST-LIST:START -->
+- [AI Courses | Hackathon Winner Project](http://devlix.org/blog/id/3)
+- [Wordly](http://devlix.org/blog/id/2)
+- [Python GUI YouTube Video Downloader](http://devlix.org/blog/id/1)
+- [My old Bootstrap Websites](http://devlix.org/blog/id/0)
 <!-- BLOG-POST-LIST:END -->
 
 <h3 align="left">Connect with me:</h3>
