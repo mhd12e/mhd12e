@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm mhd12 (Mohamed Elsayed)</h1>
-<h3 align="center">A 13 yr old based in the UAE</h3>
+<h3 align="center">based in the UAE</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=mhd12e&label=Profile%20views&color=ff7800&style=flat-square" alt="mhd12e" /> </p>
 
