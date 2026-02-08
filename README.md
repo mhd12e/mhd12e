@@ -30,12 +30,15 @@ const developer = {
 
 ### 📝 Latest Articles
 <!-- ARTICLE-LIST:START -->
-_No items yet. Check back soon!_
+- 📝 [This is just a test article](https://mhd12.dev/journal/test) - Feb 7, 2026
 <!-- ARTICLE-LIST:END -->
 
 ### 🚀 Latest Projects
 <!-- PROJECT-LIST:START -->
-_No items yet. Check back soon!_
+- 🚀 [Noor-Ibtikar Exhibition 2026 Platform](https://noor.mhd12.dev) - Feb 7, 2026
+- 🚀 [Smart Sample Viewer](https://science.mhd12.dev/) - Feb 7, 2026
+- 🚀 [GreenSteps](https://greensteps.devlix.org) - Feb 7, 2026
+- 🚀 [AI Course Tutor](https://github.com/mhd12e/ai-courses) - Feb 7, 2026
 <!-- PROJECT-LIST:END -->
 
 ---
