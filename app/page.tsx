@@ -112,7 +112,7 @@ export default async function Home() {
         </section>
 
         {/* About Me Section */}
-        <section className="container mx-auto px-4">
+        <section id="about" className="container mx-auto px-4 scroll-mt-20">
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-12">About Me</h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Left Column: Bio, Education, Experience */}
