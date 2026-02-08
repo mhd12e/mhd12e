@@ -40,4 +40,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add README.md
           git commit -m "📝 Update README with latest articles and projects"
+          git pull --rebase origin main
           git push
