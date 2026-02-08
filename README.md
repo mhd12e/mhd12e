@@ -35,6 +35,7 @@ const developer = {
 
 ### 🚀 Latest Projects
 <!-- PROJECT-LIST:START -->
+- 🚀 [Al Noor Innovators Portfolio](https://team.mhd12.dev) - Feb 8, 2026
 - 🚀 [Noor-Ibtikar Exhibition 2026 Platform](https://noor.mhd12.dev) - Feb 7, 2026
 - 🚀 [Smart Sample Viewer](https://science.mhd12.dev/) - Feb 7, 2026
 - 🚀 [GreenSteps](https://greensteps.devlix.org) - Feb 7, 2026
