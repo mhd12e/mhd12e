@@ -1,52 +1,36 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# =============================================================================
+# Docker Build Context - Exclude these from Docker builds
+# =============================================================================
 
-# =============================================================================
-# Dependencies
-# =============================================================================
+# Dependencies (will be installed inside container)
 node_modules/
-/.pnp
+.pnp
 .pnp.*
 .yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
 
-# =============================================================================
-# Next.js Build Output
-# =============================================================================
-/.next/
-/out/
-/build/
+# Next.js build output (will be built inside container)
 .next/
-*.next
+out/
+build/
 
 # =============================================================================
-# Environment Files (NEVER commit these!)
+# Environment & Secrets
 # =============================================================================
-.env
-.env.*
+# Note: .env is needed for build, so we copy it explicitly in Dockerfile
+# But exclude development-specific overrides
 .env.local
 .env.development
 .env.development.local
 .env.test
 .env.test.local
-.env.production
 .env.production.local
-!.env.example
 
 # =============================================================================
-# Prisma
+# Git & Version Control
 # =============================================================================
-/lib/generated/prisma/
-/prisma/*.db
-/prisma/*.db-journal
-
-# =============================================================================
-# Docker
-# =============================================================================
-docker-compose.override.yml
-docker-compose.local.yml
+.git/
+.gitignore
+.gitattributes
 
 # =============================================================================
 # IDE & Editor
@@ -56,9 +40,30 @@ docker-compose.local.yml
 *.swp
 *.swo
 *~
-.project
-.classpath
-.settings/
+
+# =============================================================================
+# Documentation (not needed in container)
+# =============================================================================
+README.md
+CHANGELOG.md
+LICENSE
+docs/
+*.md
+!package.json
+
+# =============================================================================
+# Testing & Development
+# =============================================================================
+coverage/
+.nyc_output/
+*.lcov
+__tests__/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+jest.config.*
+vitest.config.*
 
 # =============================================================================
 # OS Generated Files
@@ -66,49 +71,45 @@ docker-compose.local.yml
 .DS_Store
 .DS_Store?
 ._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
+ehthumbs.db
 desktop.ini
 
 # =============================================================================
-# Logs & Debug
+# Logs
 # =============================================================================
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
-lerna-debug.log*
 *.log
 
 # =============================================================================
-# Testing & Coverage
+# Docker-specific (prevent loops)
 # =============================================================================
-/coverage/
-.nyc_output/
-*.lcov
+Dockerfile*
+docker-compose*.yml
+docker-compose*.yaml
+.dockerignore
 
 # =============================================================================
-# TypeScript
+# CI/CD & Config files not needed at runtime
 # =============================================================================
-*.tsbuildinfo
-next-env.d.ts
+.github/
+.gitlab-ci.yml
+.travis.yml
+Makefile
+*.sh
+!scripts/app-start.sh
 
 # =============================================================================
-# Misc
-# =============================================================================
-*.pem
-*.key
-*.crt
-.vercel
-.turbo
-
-# =============================================================================
-# Temporary Files
+# Temporary & Misc
 # =============================================================================
 tmp/
 temp/
 *.tmp
 *.temp
 *.bak
+*.pem
+*.key
+*.crt

@@ -1,0 +1,52 @@
+services:
+  portfolio-app:
+    container_name: portfolio-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    user: root
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+      - portfolio_node_modules:/app/node_modules
+      - portfolio_next_cache:/app/.next
+    command: ["sh", "/app/scripts/app-start.sh"]
+    depends_on:
+      portfolio-db:
+        condition: service_healthy
+    networks:
+      - portfolio-network
+      - proxy
+
+  portfolio-db:
+    container_name: portfolio-db
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=portfolio
+    volumes:
+      - portfolio_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - portfolio-network
+
+volumes:
+  portfolio_postgres_data:
+  portfolio_node_modules:
+  portfolio_next_cache:
+
+networks:
+  portfolio-network:
+    driver: bridge
+  proxy:
+    external: true
