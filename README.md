@@ -30,6 +30,7 @@ const developer = {
 
 ### 📝 Latest Articles
 <!-- ARTICLE-LIST:START -->
+- 📝 [Please Dont Use Vim](https://mhd12.dev/journal/please-dont-use-vim) - Feb 13, 2026
 - 📝 [This is just a test article](https://mhd12.dev/journal/test) - Feb 7, 2026
 <!-- ARTICLE-LIST:END -->
 
