@@ -30,17 +30,12 @@ const developer = {
 
 ### 📝 Latest Articles
 <!-- ARTICLE-LIST:START -->
-- 📝 [Please Dont Use Vim](https://mhd12.dev/journal/please-dont-use-vim) - Feb 13, 2026
-- 📝 [This is just a test article](https://mhd12.dev/journal/test) - Feb 7, 2026
+_No items yet. Check back soon!_
 <!-- ARTICLE-LIST:END -->
 
 ### 🚀 Latest Projects
 <!-- PROJECT-LIST:START -->
-- 🚀 [Al Noor Innovators Portfolio](https://team.mhd12.dev) - Feb 8, 2026
-- 🚀 [Noor-Ibtikar Exhibition 2026 Platform](https://noor.mhd12.dev) - Feb 7, 2026
-- 🚀 [Smart Sample Viewer](https://science.mhd12.dev/) - Feb 7, 2026
-- 🚀 [GreenSteps](https://greensteps.devlix.org) - Feb 7, 2026
-- 🚀 [AI Course Tutor](https://github.com/mhd12e/ai-courses) - Feb 7, 2026
+_No items yet. Check back soon!_
 <!-- PROJECT-LIST:END -->
 
 ---
